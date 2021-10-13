@@ -30,13 +30,20 @@ import { Card, CardBody, CardImg, CardText } from 'reactstrap';
     render() {
         const list = this.props.books.map(book => {
             return (
-                <div key={book.id} className='col-md-3 m-1'>
+                
+                    <div key={book.id} className='col-sm-4 m-1' >
                     <Card onClick={() => this.onSelectedBook(book)}>
-                        <CardImg src={book.image} width='50%' height='100%' alt={book.title}/>
+                    <button>remove</button>
+                        <CardImg src={book.image} width='250' height='300' alt={book.title}/>
                         <CardText>{`Published in ${book.published}`}</CardText>
                     </Card>
+                    
                 </div>
+                
+               
+                
             )
+            
         })
         return (
             <div className='container'>
@@ -44,11 +51,12 @@ import { Card, CardBody, CardImg, CardText } from 'reactstrap';
                     {list}
                 </div>
                 <div className='row'>
-                    <div className='col-md-5 m-1'>
+                    <div className='col-md-3 m-1'>
                         {this.displaySelectedBook(this.state.selectedBook)}
                     </div>
                 </div>
             </div>
+            
         )
     }
  }

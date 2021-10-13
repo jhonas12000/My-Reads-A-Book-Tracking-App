@@ -6,7 +6,7 @@ export const BOOKS = [
         published: '2006',
         image: 'images/Audacity-of-Hope.jpg',
         read: false,
-        year: 'for future'
+        year: 'for-future'
     },
     {
         id: 2,

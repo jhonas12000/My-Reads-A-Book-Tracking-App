@@ -1,0 +1,32 @@
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+.navbar-dark {
+    background-color: #901CAD;  
+}
+.navbar {
+    padding: 5px;
+}
+h1, h3 {
+    font-family: "Lobster", cursive;
+    text-align: center;
+}
+h1.jumbotron {
+    font-size: 30px;
+}
+.jumbotron {
+    margin: 0;
+    padding: 20px;
+    background-color:  #3046C5;
+    color: white;
+}
+.navbar {
+    text-align: right;
+    margin-right: 0px;
+}
+.nav-link {
+    margin-left: 20px;
+}
+
+
